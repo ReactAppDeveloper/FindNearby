@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewLogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/madupapplogo"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Find Answers To Your Travel Questions"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/textViewFind"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewSparking"
+        android:src="@drawable/sparking"
+        android:layout_below="@+id/textViewFind"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up to continue"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/textViewSignUp"
+        android:layout_below="@+id/imageViewSparking"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textViewSignUp"
+        android:layout_margin="30dp" />
+
+    <TextView
+        android:id="@+id/login_status"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/login_button"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="GO!"
+        android:id="@+id/buttonGo"
+        android:layout_below="@+id/login_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:singleLine="false"
+        android:background="#F05F71"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/textViewInfo"-->
+        <!--android:layout_below="@+id/login_button"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="16sp"-->
+        <!--/>-->
+</RelativeLayout>
